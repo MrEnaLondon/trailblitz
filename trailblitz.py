@@ -3,7 +3,8 @@ import pygame
 
 pygame.init()
 
-SCREEN_WIDTH, SCREEN_HEIGHT = pygame.display.get_desktop_sizes()[0]
+#SCREEN_WIDTH, SCREEN_HEIGHT = pygame.display.get_desktop_sizes()[0]
+SCREEN_WIDTH, SCREEN_HEIGHT = 1200, 800
 
 # pygame setup
 screen = pygame.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT])
@@ -16,8 +17,7 @@ player_pos = pygame.Vector2(screen.get_width() / 2, screen.get_height() / 2)
 
 
 background_color = "grey"
-dot1 = (2,2)
-#poligon(screen, "black", ) Вова не дописал отрисовку полигона
+#Вова дописал отрисовку полигона
 
 while running:
     # poll for events
